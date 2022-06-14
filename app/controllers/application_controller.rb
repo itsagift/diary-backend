@@ -10,7 +10,6 @@ class ApplicationController < Sinatra::Base
 
   get "/entries" do
     entries = Entry.all
-    # return a JSON response with an array of all the game data
     entries.to_json
   end
 
